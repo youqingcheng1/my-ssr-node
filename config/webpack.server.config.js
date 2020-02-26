@@ -10,13 +10,12 @@ module.exports = merge(base, {
    // 对 bundle renderer 提供 source map 支持
   devtool: '#source-map',
   entry: {
-    server: [
-      path.resolve(__dirname, '../src/entry-server.js')
-    ]
+    server: path.resolve(__dirname, '../src/entry-server.js')
   },
   externals: [nodeExternals()],
   output: {
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
+    filename:'server-bundle.js'
   },
   plugins: [
     new VueSSRServerPlugin(),

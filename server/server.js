@@ -15,6 +15,9 @@ const createRenderer = (bundle, options) => createBundleRenderer(bundle, Object.
 let baseRender = (renderer,ctx,next)=>{
   let context = {
       url:ctx.url,
+      title:'时间戳',
+      keywords:'尤钦程',
+      description:'个人博客'
   };
 
   const ssrStream = renderer.renderToStream(context);
@@ -60,6 +63,6 @@ backendApp
 .use(backendRouter.allowedMethods());
 
 
-backendApp.listen(3000, () => {
-  console.log('服务器端渲染地址： http://localhost:3000');
+backendApp.listen(5000, () => {
+  console.log('服务器端渲染地址： http://localhost:5000');
 });

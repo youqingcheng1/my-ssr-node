@@ -6,6 +6,7 @@ const webpack = require('webpack')
 const chokidar = require('chokidar')//监听文件变化
 const clientConfig = require('./webpack.client.config')
 const serverConfig = require('./webpack.server.config')
+const PassThrough = require('stream').PassThrough;
 
 // 读取vue-ssr-webpack-plugin生成的文件
 const readFile = (fs, file) => {
