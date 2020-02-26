@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { Message } from 'element-ui';
-import { queryURLParam } from '@/common/utils';
+// import { queryURLParam } from '@/common/utils';
 let hasMessage = 0;
 
 /**

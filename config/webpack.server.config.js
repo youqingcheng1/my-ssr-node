@@ -11,7 +11,6 @@ module.exports = merge(base, {
   devtool: '#source-map',
   entry: {
     server: [
-      // 'react-hot-loader/patch',
       path.resolve(__dirname, '../src/entry-server.js')
     ]
   },

@@ -7,7 +7,7 @@ Vue.use(Router);
 function createRouter() {
   const routes = [
     {
-      path: '/home',
+      path: '/',
       component: () => import('../views/Home.vue')
     },
     {
