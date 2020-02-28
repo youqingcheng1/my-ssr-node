@@ -11,10 +11,8 @@ export default {
     },
     created(){
         this.$store.commit('increment')
-        console.log(this.$store.state.list)
     },
     asyncData({store, route}){
-        // console.log(store)
         store.dispatch('queryUser')
     },
 
