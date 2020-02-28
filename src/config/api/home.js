@@ -4,8 +4,8 @@ import { baseUrl } from '../base';
 
 const home = {
     queryUser(param){
-        console.log(baseUrl)
-        // return ajax.get(`${baseUrl}`)
+        // console.log(baseUrl)
+        return ajax.get(`${baseUrl}`)
     }
 }
 export default home;

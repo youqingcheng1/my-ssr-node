@@ -2,7 +2,9 @@ export default {
     increment(state){
         state.count++
     },
-    getList(state){
-        state.list=state;
+    getList(state,data){
+        console.log(data)
+        state.list=data;
+        // console.log(state.list)
     }
 }

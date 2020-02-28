@@ -13,9 +13,12 @@ export default context => {
         return reject({ code: 404 });
       }
 
+      // console.log(matchedComponents)
+
       Promise.all(matchedComponents.map(component => {
+        // console.log(component)
         if (component.asyncData) {
-          return component.asyncData({ store });
+          return component.asyncData({ store, router });
         }
       })).then(() => {
         // 当使用 template 时，context.state 将作为 window.__INITIAL_STATE__ 状态，自动嵌入到最终的 HTML 中
